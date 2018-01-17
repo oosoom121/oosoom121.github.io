@@ -1,0 +1,72 @@
+/* Getting the new tags to behave */
+article, section {display:block;}
+
+/* Global properties ======================================================== */
+
+body 
+{
+    font-family:Arial, Helvetica, sans-serif;
+    background-image:URL(../images/blkwavesilkbg.jpg);
+}
+
+.headerSection
+{
+    width:800px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+hr
+{
+    display: block;
+    margin-right:auto;
+    width: 80%;
+    height: 5px;
+    background-color: firebrick;
+    border-style: inset;
+    margin-left:auto;
+}
+
+.container
+{
+    display:block;
+    background-color:#efe7d6;
+    width:100%;
+    height:800px;
+    position: relative;
+    top: -3em;
+    float:left;
+    border:5px;
+    border-style:ridge;
+    border-color:Black;
+}
+
+/* Script defines embedded font */
+
+@font-face
+{
+    font-family: bluelmin;
+    src: url('Bluelmin_Ronald.eot')
+	,url('Bluelmin_Ronald.ttf'); /* IE9 */
+}
+.headerfont1
+{
+    font-family:bluelmin;
+    font-size:75px;
+    font-weight:normal;
+    color:Silver;
+    text-align: center;
+}
+
+.headerfont2
+{
+    font-family:bluelmin;
+    font-size:30px;
+    font-weight:normal;
+    color:Silver;
+    text-align: center;
+}
+.headfont
+
+
+
