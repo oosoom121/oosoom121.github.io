@@ -3,17 +3,38 @@ article, section {display:block;}
 
 /* Global properties ======================================================== */
 
-body 
+/* Element styles ********************** */
+
+body
 {
     font-family:Arial, Helvetica, sans-serif;
     background-image:URL(../images/blkwavesilkbg.jpg);
 }
 
-.headerSection
+david
 {
-    width:800px;
-    margin-left:auto;
-    margin-right:auto;
+  display: block;
+  padding-top: 0.5em;
+  position: relative;
+  margin: 0 auto;
+  animation-name: topfadein;
+  animation-duration: 1s;
+  animation-timing-function:linear;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-delay: 0s;
+}
+
+footer
+{
+  color:white;
+  text-align:center;
+}
+
+h5
+{
+  padding-bottom: 1em;
+  margin:0;
 }
 
 hr
@@ -27,32 +48,83 @@ hr
     margin-left:auto;
 }
 
+nav
+{
+  margin-left:2em;
+}
+
+
+nav a
+{
+  text-decoration:none;
+  line-height:1.4em;
+  width: 6em;
+  color: white;
+  font-size:1.2em;
+  font-style: oblique;
+}
+
+nav a:hover
+{
+  color:#ff5733;
+  font-style: normal;
+  font-variant:small-caps;
+  opacity: 1;
+}
+
+ul
+{
+  list-style:none;
+  display: inline;
+  width:7em;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+
+
+/* Classes  ******************************** */
 .container
 {
     display:block;
     background-color:#efe7d6;
-    width:100%;
-    height:800px;
+    width:75%;
+    height:30em;
+    margin: 0 auto;
     position: relative;
-    top: -3em;
-    float:left;
-    border:5px;
+    top: -9em;
+    border:5px red;
     border-style:ridge;
-    border-color:Black;
+    border-radius: 5%;
 }
 
-/* Script defines embedded font */
+.borderbox
+{
+  box-sizing: border-box;
+}
+
+.fadeMeIn
+{
+    animation-name: fadein;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animatiin-direction: alternate;
+}
 
 @font-face
 {
     font-family: bluelmin;
     src: url('Bluelmin_Ronald.eot')
+         ,url('Bluelmin_Ronald.otf')
 	,url('Bluelmin_Ronald.ttf'); /* IE9 */
 }
+
 .headerfont1
 {
     font-family:bluelmin;
-    font-size:75px;
+    font-size:6em;
     font-weight:normal;
     color:Silver;
     text-align: center;
@@ -61,12 +133,32 @@ hr
 .headerfont2
 {
     font-family:bluelmin;
-    font-size:30px;
-    font-weight:normal;
+    font-size:2.4em;
+    font-weight:100;
     color:Silver;
     text-align: center;
 }
-.headfont
 
+.headerSection
+{
+    margin:0 auto;
+}
+
+/* *********** Animation ******************** */
+@keyframes topfadein{
+    from{
+        top: -100px;
+        opacity: 0;
+    }
+    to{
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein{
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
 
 
