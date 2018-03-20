@@ -105,6 +105,11 @@ ul
   box-sizing: border-box;
 }
 
+.date {
+	font-size: 0.9em;
+	color: white;
+}
+
 .fadeMeIn
 {
     animation-name: fadein;
