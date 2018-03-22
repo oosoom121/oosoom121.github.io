@@ -7,7 +7,7 @@ article, section {display:block;}
 
 body {
 	font-family: Arial, Helvetica, sans-serif;
-	background-color: ;
+    background: linear-gradient(0deg, #343A47, silver 20%, #343A47 65%);
 }
 
 david
@@ -26,7 +26,7 @@ david
 
 footer
 {
-  color:white;
+  color:gray;
   text-align:center;
 }
 
@@ -127,12 +127,16 @@ ul
 	,url('Bluelmin_Ronald.ttf'); /* IE9 */
 }
 
+.active {
+    color:#ff5733;
+}
+
 .headerfont1
 {
     font-family:bluelmin;
     font-size:6em;
     font-weight:normal;
-    color:gray;
+    color:silver;
     text-align: center;
 }
 
@@ -141,7 +145,7 @@ ul
     font-family:bluelmin;
     font-size:2.4em;
     font-weight:100;
-    color:gray;
+    color:silver;
     text-align: center;
 }
 
