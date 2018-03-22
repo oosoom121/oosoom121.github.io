@@ -24,6 +24,11 @@ david
   animation-delay: 0s;
 }
 
+.paratext {
+    font-size: 1.2em;
+    
+}
+
 footer
 {
   color:gray;
