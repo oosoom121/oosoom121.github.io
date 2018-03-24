@@ -37,16 +37,66 @@
 				<span id="lblTime"></span>
 			</aside>
 		</div>
-		<div class="col-8 pb-5">
-
-                        <div class="text-center headerfont2">Under Construction</div>
- 
+		<div class="pb-5 text-light">
             <!-- *****************  Main Content  ******************** -->
+            <form class="col-10 m-auto" method="post" action="send-mail.php">
+                <fieldset>
+                <div class="form-group">
+                    <label for="compName">Company</label>
+                    <input type="text" class="form-control d-inline" id="compName" placeholder="Company">
+                </div>  
+                <div class="form-group">
+                    <label for="contactName">Name - <em class="text-danger">Required</em></label>
+                    <input type="text" class="form-control" id="contactName" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="contactEmailAddress">Email address - <em class="text-danger">Required</em></label>
+                  <input type="email" class="form-control" id="contactEmailAddress" placeholder="name@domain.com" required>
+                </div>
+                  <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" id="address" placeholder="Address">
+                </div>
+                <div class="row">
+                <div class="form-group col">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" id="city" placeholder="City">
+                </div>
+                <div class="form-group col">
+                    <label for="state">State</label>
+                    <input type="text" class="form-control" id="state" placeholder="State">
+                </div>
+                <div class="form-group col">
+                    <label for="zipCode">Zip</label>
+                    <input type="text" class="form-control" id="zipCode" placeholder="Zip">
+                </div>
+                </div> 
+
+                
+                <div class="form-group">
+                  <label for="message">Message - <em class="text-danger">Required</em></label>
+                  <textarea class="form-control" id="message" rows="3" required></textarea>
+                </div>
+                </fieldset>
+            <input class="regButt" type="submit" value="  Send  " />
+            <input class="regButt" type="reset" value="  Reset  " />
+            </form>            
+		</div>
+        		<div class="col-2 ml-auto text-light">
+			<nav class="borderbox">
+                <br />
+				<ul>
+					<li><h5>David Stasinos</h5></li>
+					<li><a href="mailto:davidstasi@davidstasinos.com">Email Me</a></li>
+					<li>(630) 618-9238</li>
+				</ul>
+			</nav>
 
 		</div>
 	</div>
-	<footer class="pt-5">
+	<footer class="pt-5 pb-5">
 		&copy;2018 - David Stasinos
+        <br /><br />
 	</footer>
 
 	<!-- Optional JavaScript -->
